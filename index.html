@@ -19,6 +19,9 @@
 
     <!-- Custom CSS -->
     <link href="css/scrolling-nav.css" rel="stylesheet">
+	
+	<!-- Use MathJax via CDN-->
+	<script type="text/javascript" src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -129,35 +132,65 @@
 			<ul class="list-unstyled">
 					<li class="h2">Emission Measure Studies in Hydrodynamic Models</li>
 					<div class="row">
-						<div class="col-md-8">
-							Text about research topic; lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
+						<div class="col-md-4">
+							The nanoflare heating theory of the solar corona has garnered much attention since its conception by <a href="http://adsabs.harvard.edu/abs/1988ApJ...330..474P">Parker (1988)</a>. However, emission signatures from nanoflare heating events are extremely difficult to detect. One solution is to use hydrodynamic models to calculate observables from nanoflare-heated coronal loops and compare to observations. I have adapted the popular enthalpy-based thermal evolution of loops (EBTEL) model by <a href="http://adsabs.harvard.edu/abs/2008ApJ...682.1351K">Klimchuk et al. (2008)</a>, <a href="http://adsabs.harvard.edu/abs/2012ApJ...752..161C">Cargill et al. (2012a)</a>, and <a href="http://adsabs.harvard.edu/abs/2012ApJ...758....5C">Cargill et al. (2012b)</a> to treat the evolution of the electron and ion temperatures and pressures separately while maintaining the assumption of quasi-neutrality. This model has been successfully benchamarked against the more robust 1D hydrodynamic code <a href="http://adsabs.harvard.edu/abs/2013ApJ...764..193R">HYDRAD</a>. Our group is interested in using this two-fluid EBTEL model to explore large parameter spaces not accessible to slower hydrodynamic models in order to better constrain nanoflare heating properties.
 						</div>
 						<div class="col-md-4">
-							Picture here
+							<div class="thumbnail with-caption">
+								<img src="figures/ebtel_em_1.png" width="auto" height="auto">
+								<p>Emission measure curves for an electron-heated coronal loop with a power-law heating function and varying heating frequencies.</p>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="thumbnail with-caption">
+								<img src="figures/ebtel_em_2.png" width="auto" height="auto">
+								<p>Resulting hot- and cool-branch emission measure slopes. </p>
+							</div>
 						</div>
 					</div>
 					<li class="h2">Automatic Event Detection in Active Region Cores</li>
 					<div class="row">
-						<div class="col-md-3">
-							<img class="img-thumbnail" src="figures/nmf_1.png" alt="NMF Source" width="auto" height="auto">
+						<div class="col-md-4">
+							<div class="thumbnail with-caption">
+								<img src="figures/nmf_1.png" alt="NMF Source" width="auto" height="auto">
+								<p>Sample composite time series with five overlapping gaussian pulses.</p>
+							</div>
 						</div>
-						<div class="col-md-3">
-							<img class="img-thumbnail" src="figures/nmf_2.png" alt="NMF Separated" width="auto" height="auto">
+						<div class="col-md-4">
+							<div class="thumbnail with-caption">
+								<img src="figures/nmf_2.png" alt="NMF Separated" width="auto" height="auto">
+								<p>Resulting sources after separation by NMF algorithm; even the most strongly overlapping sources (panels 3 and 4) are recovered as distinct pulses.</p>
+							</div>
 						</div>
-						<div class="col-md-6">
-							The nanoflare heating theory of the solar corona has garnered much attention since its conception by <a href="http://adsabs.harvard.edu/abs/1988ApJ...330..474P">Parker (1988)</a>. However, the theory has long suffered from a lack of observational evidence. Because of their short duration and comparatively low amplitude (not to mention effects due to non-equilibrium ionization), emission signatures from nanoflare heating events are extremely difficult to detect. I am interested in using non-negative matrix factorization (NMF), a matrix deconvolution technique with a wide variety of applications, to automatically identify emission signatures of nanoflare-heated plasma. For a given number of source functions of arbitrary shape, NMF minimizes a cost (or error) function in order to fit the sum of these individual sources to the convoluted truth function. So in this case, the "truth" is the composite intensity time-series (for example) and the sources are the responses to individual nanoflare events. Identifying the correct number of source functions and their associated amplitudes will allow for improved constraints on both nanoflare heating frequency and strength. Before such an algorithm can be applied to observational data, it's performance must be assessed through application to forward-modeled results. Currently, our group is working toward an NMF algorithm capable of accurately reproducing the nanoflare heating frequency of forward-modeled nanoflare-heated plasmas from hydrodynamic codes. The figure to the left shows the application of the algorithm to a convolution of a few gaussian pulses.
+						<div class="col-md-4">
+							I am interested in using non-negative matrix factorization (NMF), a matrix deconvolution technique with a wide variety of applications, to automatically identify emission signatures of nanoflare-heated plasma. For a given number of source functions of arbitrary shape, NMF minimizes a cost function in order to fit the sum of these individual sources to the convoluted truth function. In this case, the "truth" is the composite intensity time-series and the sources are the responses to individual nanoflare events. Identifying the correct number of source functions and their associated amplitudes will allow for improved constraints on both nanoflare heating frequency and strength. Before such an algorithm can be applied to observational data, its performance must be assessed through application to forward-modeled results. Currently, our group is working toward an NMF algorithm capable of accurately reproducing the nanoflare heating frequency of forward-modeled nanoflare-heated plasmas from hydrodynamic codes.
+							<!---->
 						</div>
 					</div>
 			</ul>
         </div>
     </section>
 	
-    <!-- Services Section -->
+    <!-- Software Section -->
     <section id="software" class="software-section">
         <div class="container">
 			<h1>Software</h1>
             <div class="row">
                 <div class="col-lg-12">
+					<div class=" ul dl">
+						<li>
+							<dt class="h4">EBTEL</dt>
+							<dd>The Solar Physics Research Group at Rice University maintains the enthalpy-based thermal evolution of loops (EBTEL) model by <a href="http://adsabs.harvard.edu/abs/2008ApJ...682.1351K">Klimchuk et al. (2008)</a>, <a href="http://adsabs.harvard.edu/abs/2012ApJ...752..161C">Cargill et al. (2012a)</a>, and <a href="http://adsabs.harvard.edu/abs/2012ApJ...758....5C">Cargill et al. (2012b)</a>, written in IDL. The source code and documentation can be found on the <a href="https://github.com/rice-solar-physics">GitHub page</a>.</dd>
+						</li>
+						<li>
+							<dt class="h4">EBTEL-C</dt>
+							<dd>In addition to the original EBTEL model, our group maintains a translation of the EBTEL model into the C programming language. This version allows for much quicker run times (e.g. approximately 10 s for an 80,000 s run) and includes a fourth-order Runge-Kutta solver. The model also uses an easily configurable XML file to manage the input parameters. EBTEL-C has been carefully benchmarked against the original EBTEL code. The source code and documentation, as well as several Python scripts to help configure and run the model, can be found on the <a href="https://github.com/rice-solar-physics">GitHub page</a></dd>
+						</li>
+						<li>
+							<dt class="h4">SolarNMF</dt>
+							<dd>Recently, I have been adapting some common non-negative matrix factorization (NMF) algorithms for use with solar data, either in a time series or image format. Currently, we are testing this software against forward modeled data from both HYDRAD and EBTEL. The Python source code is available on <a href="https://github.com/wtbarnes/solarnmf">GitHub</a>. If you are interested in contributing to this project, please contact me.</dd>
+						</li>
+					</div>
                 </div>
             </div>
         </div>

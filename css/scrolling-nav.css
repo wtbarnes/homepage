@@ -42,33 +42,56 @@ of those sections to manage the look and feel of the site. */
 
 .resume-section {
     /*height: 100%;*/
-    padding-top: 25px;
+    padding-top: 50px;
     text-align: center;
     background: #eee;
 }
 
 .research-section {
     /*height: 100%;*/
-    padding-top: 25px;
+    padding-top: 50px;
     text-align: center;
     background: #fff;
+	padding-bottom: 25px;
 }
 
 .software-section {
     /*height: 100%;*/
-    padding-top: 25px;
+    padding-top: 50px;
     text-align: center;
     background: #eee;
+	padding-bottom: 25px;
 }
 
 .contact-section {
     /*height: 100%;*/
-    padding-top: 25px;
+    padding-top: 50px;
     text-align: center;
     background: #fff;
 	padding-bottom: 100px;
 }
 
+/*add some styling for the footer*/
 .footer {
 	text-align:center;
+}
+
+/*add some styling for thumbnail captions*/
+.thumbnail.with-caption {
+	display: inline-block;
+	background: #f5f5f5;
+}
+
+.thumbnail.with-caption p{
+	margin: 0;
+	padding-top: 0.5em;
+}
+
+/*add some styling to the description lists (dl)*/
+.dl dt{
+	text-align: left;
+}
+
+.dl dd{
+	text-align: left;
 }
